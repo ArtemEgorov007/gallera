@@ -114,15 +114,9 @@
 .collection__filmstrip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    gap: 6px;
+    padding: 6px;
     background: var(--bg-deep);
-    height: 0;
-    overflow: hidden;
-    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.collection__filmstrip--visible {
-    height: 72px;
 }
 
 .collection__thumb {

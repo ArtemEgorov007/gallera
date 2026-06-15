@@ -65,7 +65,6 @@ Lightbox.propTypes = {
  */
 export const Collection = ({ name, images, index = 0 }) => {
     const [lightbox, setLightbox] = useState(null);
-    const [thumbsVisible, setThumbsVisible] = useState(false);
 
     const serial = String(index + 1).padStart(2, '0');
 
@@ -79,11 +78,7 @@ export const Collection = ({ name, images, index = 0 }) => {
 
     return (
         <>
-            <article
-                className="collection"
-                onMouseEnter={() => setThumbsVisible(true)}
-                onMouseLeave={() => setThumbsVisible(false)}
-            >
+            <article className="collection">
                 {/* Serial number editorial badge */}
                 <span className="collection__serial" aria-hidden="true">{serial}</span>
 
@@ -109,7 +104,7 @@ export const Collection = ({ name, images, index = 0 }) => {
                 </div>
 
                 {/* Thumbnail filmstrip */}
-                <div className={`collection__filmstrip ${thumbsVisible ? 'collection__filmstrip--visible' : ''}`}>
+                <div className="collection__filmstrip">
                     {[images[1], images[2], images[3]].map((src, i) => (
                         <div
                             key={i}
