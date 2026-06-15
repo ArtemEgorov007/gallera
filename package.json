@@ -1,5 +1,5 @@
 {
-  "name": "photo-library",
+  "name": "gallera",
   "description": "React app for browsing photo collections with category filters and pagination",
   "version": "0.1.0",
   "private": true,

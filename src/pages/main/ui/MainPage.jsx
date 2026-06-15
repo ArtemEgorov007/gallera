@@ -22,7 +22,8 @@ export const MainPage = () => {
 
     return (
         <div className="app-container">
-            <h1>Моя коллекция фотографий</h1>
+            <h1>Gallera</h1>
+            <p className="app-subtitle">Моя коллекция фотографий</p>
             <div className="top">
                 <CategoryFilter 
                     activeCategory={categoriesActive} 
